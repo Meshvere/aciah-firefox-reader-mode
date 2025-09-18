@@ -1,0 +1,13 @@
+{
+  "name": "npm",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [
+    "TTS",
+    "Text to speech"
+  ],
+  "author": "Meshvere",
+  "license": "ISC",
+  "description": ""
+}
