@@ -11,7 +11,7 @@ function buildCommand(text) {
     const escaped = text.replace(/'/g, '').replace(/"/g, '\\"');
     switch (os.platform()) {
         case "linux":
-            return `command -v spd-say >/dev/null 2>&1 && spd-say "${escaped}" || espeak "${escaped}"`;
+            return `command -v spd-say >/dev/null 2>&1 && spd-say --wait "${escaped}" || espeak "${escaped}"`;
         case "darwin":
             return `say "${escaped}"`;
         case "win32":
